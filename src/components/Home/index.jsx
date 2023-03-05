@@ -9,8 +9,6 @@ const Home = () => {
       .then((d) => setMyData(d));
   }, []);
 
-  console.log(myData);
-
   return (
     <>
       <h1 className="text-center">Home</h1>

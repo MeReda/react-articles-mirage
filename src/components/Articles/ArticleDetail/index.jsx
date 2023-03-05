@@ -11,8 +11,6 @@ const ArticleDetail = () => {
       .then((data) => setArticle(data.articles));
   }, []);
 
-  console.log(article);
-
   return (
     <>
       {article ? (
