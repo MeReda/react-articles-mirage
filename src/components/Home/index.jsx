@@ -11,29 +11,30 @@ const Home = () => {
 
   return (
     <>
-      <h1 className="text-center">Home</h1>
+      <h1 className="text-center m-5">Home</h1>
       <div className="container">
         <p className="text-center">
-          this is a test to clearify how articles should work and :
+          Ceci est un test pour clarifier comment les articles fonctionneront et
+          :
         </p>
-        <ul>
-          <li>data needed</li>
-          <li>try react router</li>
-          <li>test mirageJs</li>
-          <li>
-            to get the source code{" "}
-            <a
-              href="https://github.com/MeReda/react-articles-mirage/tree/master"
-              target="_blank"
-            >
-              click here
-            </a>
-          </li>
+        <ul className="pt-3">
+          <li>Détecter les données nécessaires pour les articles</li>
+          <li>Essayer React Router</li>
+          <li>Test mirageJs</li>
         </ul>
-        <h2>the data in mirageJs is :</h2>
+        <p>
+          Pour obtenir le code source{" "}
+          <a
+            href="https://github.com/MeReda/react-articles-mirage/tree/master"
+            target="_blank"
+          >
+            cliquez ici
+          </a>
+        </p>
+        <h2 className="mt-5 pt-5">Les données dans MirageJs sont:</h2>
         <span className="text-secondary">
-          (the image should be presented as "/path/image1.png" or any other
-          extention "jpg/jpeg/webp...")
+          (les images doivent être présentées sous la forme de "
+          /chemin/image1.png " ou toute autre extension " jpg/jpeg/webp... ")
         </span>
         <pre>{JSON.stringify(myData, null, 2)}</pre>
       </div>
