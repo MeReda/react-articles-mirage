@@ -17,7 +17,7 @@ const Articles = () => {
       <div className="container">
         <div className="row mt-5">
           {articles.map((e) => (
-            <div key={e.id} className="col-md-3 col-sm-4">
+            <div key={e.id} className="col-md-3 col-sm-4 col-2 text-center">
               <Link to={`/articles/${e.id}`}>
                 <div className="card border-primary mb-3">
                   <div className="card-body text-primary">
