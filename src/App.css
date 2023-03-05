@@ -1,0 +1,15 @@
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+nav a {
+  padding: 1rem;
+}
+
+.img-placeholder {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
