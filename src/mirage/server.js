@@ -4,6 +4,7 @@ createServer({
   models: {
     articles: Model,
     evenements: Model,
+    annonces: Model,
   },
 
   seeds(server) {
@@ -49,6 +50,7 @@ createServer({
       image: "img 6",
       date: "2023-02-06",
     });
+
     server.create("evenement", {
       id: 1,
       title: "Spring Fashion Week",
@@ -102,6 +104,20 @@ createServer({
         "A Spectacular Display of Music, Dance, and Costumes at Carnival",
       image: "Image 6",
     });
+    server.create("annonce", {
+      id: 1,
+      title: "Annonce 1",
+      body: `MirageJS est une bibliothèque open-source puissante et polyvalente qui permet aux développeurs de construire, de tester et de partager facilement et rapidement des API fictives. Elle fournit une API simple et intuitive pour définir des itinéraires, traiter des requêtes et générer des données fictives, ce qui en fait un outil idéal pour les développeurs frontend qui souhaitent travailler indépendamment de l'équipe backend ou pour les développeurs qui veulent simuler différents scénarios dans leurs environnements de test. L'un des avantages significatifs de MirageJS est qu'il permet aux développeurs de simuler les réponses du serveur, de tester le code côté client et de prototyper de nouvelles fonctionnalités sans avoir besoin d'un véritable backend. Cela en fait un outil précieux pour les développeurs qui veulent créer ou itérer leurs applications rapidement, car ils peuvent utiliser MirageJS pour simuler différents scénarios de données sans avoir besoin de se connecter à un backend en direct. En plus de sa fonctionnalité de base, MirageJS propose également une gamme de plugins et d'addons qui étendent encore davantage ses capacités, y compris la prise en charge de GraphQL et de WebSockets. Cela signifie que les développeurs peuvent utiliser MirageJS pour construire des applications plus complexes et plus puissantes qui s'intègrent à une gamme de sources de données différentes. Dans l'ensemble, MirageJS est un outil essentiel pour le développement web moderne, offrant aux développeurs un moyen flexible et puissant de construire et de tester des API de manière rapide et efficace`,
+      image: "img 1",
+      date: "2023-02-01",
+    });
+    server.create("annonce", {
+      id: 2,
+      title: "Annonce 2",
+      body: `La bibliothèque MirageJS est open-source et polyvalente qui permet aux développeurs de construire, tester et partager rapidement des API fictives. Son API intuitive pour définir des itinéraires, traiter des requêtes et générer des données fictives en fait un outil précieux pour les développeurs frontend qui souhaitent travailler indépendamment de l'équipe backend ou simuler différents scénarios dans leurs environnements de test.Un avantage significatif de MirageJS est sa capacité à simuler les réponses du serveur, tester le code côté client et prototyper de nouvelles fonctionnalités sans avoir besoin d'un véritable backend. Cela en fait un outil précieux pour les développeurs qui souhaitent créer ou itérer rapidement leurs applications, car ils peuvent utiliser MirageJS pour simuler différents scénarios de données sans avoir besoin de se connecter à un backend en direct.En plus de sa fonctionnalité de base, MirageJS propose également une gamme de plugins et d'addons qui étendent encore davantage ses capacités, notamment la prise en charge de GraphQL et de WebSockets. Cela signifie que les développeurs peuvent utiliser MirageJS pour construire des applications plus complexes et plus puissantes qui s'intègrent à une gamme de sources de données différentes.Dans l'ensemble, MirageJS est un outil essentiel pour le développement web moderne, offrant aux développeurs un moyen flexible et puissant de construire et de tester des API de manière rapide et efficace.`,
+      image: "img 2",
+      date: "2023-02-02",
+    });
   },
 
   routes() {
@@ -124,6 +140,15 @@ createServer({
     this.get("/evenements/:id", (schema, request) => {
       const id = request.params.id;
       return schema.evenements.find(id);
+    });
+
+    this.get("/annonces", (schema, request) => {
+      return schema.annonces.all();
+    });
+
+    this.get("/annonces/:id", (schema, request) => {
+      const id = request.params.id;
+      return schema.annonces.find(id);
     });
   },
 });
