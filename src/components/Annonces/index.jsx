@@ -1,0 +1,37 @@
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+
+const Annonces = () => {
+  const [annonces, setAnnonces] = useState([]);
+
+  useEffect(() => {
+    fetch("/api/annonces")
+      .then((res) => res.json())
+      .then((data) => setAnnonces(data.annonces));
+  }, []);
+
+  return (
+    <>
+      <h1 className="text-center mt-5">Annonces</h1>
+
+      <div className="container">
+        <div className="row mt-5">
+          {annonces.map((e) => (
+            <div key={e.id} className="col-md-3 col-sm-4 col-6 text-center">
+              <Link to={`/annonces/${e.id}`}>
+                <div className="card border-primary mb-3">
+                  <div className="card-body text-primary">
+                    <h5 className="card-title">{e.title}</h5>
+                    <p className="card-text">{e.date}</p>
+                  </div>
+                </div>
+              </Link>
+            </div>
+          ))}
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default Annonces;
