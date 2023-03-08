@@ -3,6 +3,7 @@ import { createServer, Model } from "miragejs";
 createServer({
   models: {
     articles: Model,
+    evenements: Model,
   },
 
   seeds(server) {
@@ -48,6 +49,59 @@ createServer({
       image: "img 6",
       date: "2023-02-06",
     });
+    server.create("evenement", {
+      id: 1,
+      title: "Spring Fashion Week",
+      date: "2023-04-15",
+      location: "New York City, NY",
+      description:
+        "The Latest Trends and Styles showcased in a Spring Fashion Week",
+      image: "Image 1",
+    });
+    server.create("evenement", {
+      id: 2,
+      title: "Music Festival",
+      date: "2023-05-20",
+      location: "London, UK",
+      description: "Live Performances from Top Artists at a Music Festival",
+      image: "Image 2",
+    });
+    server.create("evenement", {
+      id: 3,
+      title: "Tech Conference",
+      date: "2023-06-10",
+      location: "San Francisco, CA",
+      description:
+        "Keynote Speakers and Networking Opportunities at a Tech Conference",
+      image: "Image 3",
+    });
+    server.create("evenement", {
+      id: 4,
+      title: "Anime Expo",
+      date: "2023-07-05",
+      location: "Tokyo, Japan",
+      description:
+        "Celebrating Japanese Animation and Pop Culture at an Anime Expo",
+      image: "Image 4",
+    });
+    server.create("evenement", {
+      id: 5,
+      title: "Food and Juse Festival",
+      date: "2023-08-15",
+      location: "Sydney, Australia",
+      description:
+        "Sample the Best Cuisine and Juses at a Food and Juse Festival",
+      image: "Image 5",
+    });
+    server.create("evenement", {
+      id: 6,
+      title: "Carnival",
+      date: "2023-09-23",
+      location: "Rio de Janeiro, BR",
+      description:
+        "A Spectacular Display of Music, Dance, and Costumes at Carnival",
+      image: "Image 6",
+    });
   },
 
   routes() {
@@ -61,6 +115,15 @@ createServer({
     this.get("/articles/:id", (schema, request) => {
       const id = request.params.id;
       return schema.articles.find(id);
+    });
+
+    this.get("/evenements", (schema, request) => {
+      return schema.evenements.all();
+    });
+
+    this.get("/evenements/:id", (schema, request) => {
+      const id = request.params.id;
+      return schema.evenements.find(id);
     });
   },
 });
