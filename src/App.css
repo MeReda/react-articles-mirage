@@ -20,6 +20,8 @@ nav a {
   font-weight: bold !important;
 }
 
-.fs-7 {
-  font-size: 13px;
+.lang-button {
+  text-decoration: none;
+  color: black;
+  border: 1px solid;
 }

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router";
+import { useParams, Link } from "react-router-dom";
 
 const ArticleDetail = () => {
   const params = useParams();
@@ -13,6 +13,7 @@ const ArticleDetail = () => {
 
   return (
     <>
+      <Link to="/articles">Go back</Link>
       {article ? (
         <>
           <div className="img-placeholder w-100 bg-secondary">
