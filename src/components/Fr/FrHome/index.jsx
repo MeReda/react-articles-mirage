@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const Home = () => {
+const FrHome = () => {
   const [myData, setMyData] = useState([]);
 
   useEffect(() => {
@@ -42,4 +42,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default FrHome;

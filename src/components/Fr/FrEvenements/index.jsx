@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-const Evenements = () => {
+const FrEvenements = () => {
   const [Evenements, setEvenements] = useState([]);
 
   useEffect(() => {
@@ -18,7 +18,7 @@ const Evenements = () => {
         <div className="row mt-5">
           {Evenements.map((e) => (
             <div key={e.id} className="col-md-3 col-sm-4 col-6 text-center">
-              <Link to={`/evenements/${e.id}`}>
+              <Link to={`${e.id}`}>
                 <div className="card border-primary mb-3">
                   <div className="card-body text-primary">
                     <h5 className="card-title">{e.title}</h5>
@@ -34,4 +34,4 @@ const Evenements = () => {
   );
 };
 
-export default Evenements;
+export default FrEvenements;

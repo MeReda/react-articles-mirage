@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-const NavBar = () => {
+const FrNavBar = () => {
   return (
     <nav className="navbar navbar-expand-md bg-body-tertiary">
       <div className="container-fluid">
@@ -40,10 +40,7 @@ const NavBar = () => {
               Annonces
             </NavLink>
 
-            <NavLink
-              className="lang-button ms-md-1 text-center p-md-1"
-              to="/ar"
-            >
+            <NavLink className="lang-button ms-md-1 text-center" to="/ar">
               ar
             </NavLink>
           </div>
@@ -53,4 +50,4 @@ const NavBar = () => {
   );
 };
 
-export default NavBar;
+export default FrNavBar;

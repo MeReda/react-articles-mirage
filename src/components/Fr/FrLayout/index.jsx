@@ -1,14 +1,14 @@
 import React from "react";
 import { Outlet } from "react-router";
-import NavBar from "./NavBar";
+import FrNavBar from "./FrNavBar";
 
-const Layout = () => {
+const FrLayout = () => {
   return (
     <>
-      <NavBar />
+      <FrNavBar />
       <Outlet />
     </>
   );
 };
 
-export default Layout;
+export default FrLayout;

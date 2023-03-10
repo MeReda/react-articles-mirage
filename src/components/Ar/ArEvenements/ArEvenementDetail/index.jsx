@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router";
+import { useParams, Link } from "react-router-dom";
 
-const EvenementDetail = () => {
+const ArEvenementDetail = () => {
   const params = useParams();
   const [evenement, setEvenement] = useState([]);
 
@@ -13,6 +13,9 @@ const EvenementDetail = () => {
 
   return (
     <>
+      <Link className="p-3 pt-1 d-block" to="./..">
+        &rarr; العودة
+      </Link>
       {evenement ? (
         <>
           <div className="img-placeholder w-100 bg-secondary">
@@ -32,4 +35,4 @@ const EvenementDetail = () => {
   );
 };
 
-export default EvenementDetail;
+export default ArEvenementDetail;

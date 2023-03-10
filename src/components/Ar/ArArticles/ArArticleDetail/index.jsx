@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 
-const ArticleDetail = () => {
+const ArArticleDetail = () => {
   const params = useParams();
   const [article, setArticle] = useState([]);
 
@@ -13,7 +13,9 @@ const ArticleDetail = () => {
 
   return (
     <>
-      <Link to="/articles">Go back</Link>
+      <Link className="p-3 pt-1 d-block" to="./..">
+        &rarr; العودة
+      </Link>
       {article ? (
         <>
           <div className="img-placeholder w-100 bg-secondary">
@@ -32,4 +34,4 @@ const ArticleDetail = () => {
   );
 };
 
-export default ArticleDetail;
+export default ArArticleDetail;

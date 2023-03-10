@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router";
+import { useParams, Link } from "react-router-dom";
 
-const AnnonceDetail = () => {
+const ArAnnonceDetail = () => {
   const params = useParams();
   const [annonce, setAnnonce] = useState([]);
 
@@ -13,6 +13,9 @@ const AnnonceDetail = () => {
 
   return (
     <>
+      <Link className="p-3 pt-1 d-block" to="./..">
+        &rarr; العودة
+      </Link>
       {annonce ? (
         <>
           <div className="img-placeholder w-100 bg-secondary">
@@ -31,4 +34,4 @@ const AnnonceDetail = () => {
   );
 };
 
-export default AnnonceDetail;
+export default ArAnnonceDetail;
