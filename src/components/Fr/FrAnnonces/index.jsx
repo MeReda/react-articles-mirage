@@ -15,12 +15,12 @@ const FrAnnonces = () => {
       <h1 className="text-center mt-5">Annonces</h1>
 
       <div className="container">
-        <div className="row mt-5">
+        <div className="row row-cols-2 row-cols-sm-3 row-cols-lg-4 g-4 mt-5">
           {annonces.map((e) => (
-            <div key={e.id} className="col-md-3 col-sm-4 col-6 text-center">
+            <div key={e.id} className="col text-center">
               <Link to={`${e.id}`}>
-                <div className="card border-primary mb-3">
-                  <div className="card-body text-primary">
+                <div className="card border-primary mb-3 h-100">
+                  <div className="card-body d-flex flex-column justify-content-center text-primary">
                     <h5 className="card-title">{e.title}</h5>
                     <p className="card-text">{e.date}</p>
                   </div>

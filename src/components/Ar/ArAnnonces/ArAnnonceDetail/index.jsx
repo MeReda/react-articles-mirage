@@ -16,7 +16,7 @@ const ArAnnonceDetail = () => {
       <Link className="p-3 pt-1 d-block" to="./..">
         &rarr; العودة
       </Link>
-      {annonce ? (
+      {annonce.length > 0 ? (
         <>
           <div className="img-placeholder w-100 bg-secondary">
             <h1 className="text-light">{annonce.image}</h1>
