@@ -22,10 +22,10 @@ const ArEvenementDetail = () => {
             <h1 className="text-light">{evenement.image}</h1>
           </div>
           <div className="container pt-3">
-            <h1 className="text-center">{evenement.title}</h1>
+            <h1 className="text-center">{evenement.title_ar}</h1>
             <p className="text-center mb-0">{evenement.date}</p>
-            <p className="text-center">{evenement.location}</p>
-            <p className="mt-4">{evenement.description}</p>
+            <p className="text-center">{evenement.location_ar}</p>
+            <p className="mt-4">{evenement.description_ar}</p>
           </div>
         </>
       ) : (

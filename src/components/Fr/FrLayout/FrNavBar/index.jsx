@@ -5,9 +5,7 @@ const FrNavBar = () => {
   return (
     <nav className="navbar navbar-expand-md bg-body-tertiary">
       <div className="container-fluid">
-        <a className="navbar-brand" href="#">
-          React Route
-        </a>
+        <span className="navbar-brand">Prototype</span>
         <button
           className="navbar-toggler ms-auto me-1"
           type="button"

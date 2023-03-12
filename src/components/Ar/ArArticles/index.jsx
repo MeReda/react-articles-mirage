@@ -21,7 +21,7 @@ const ArArticles = () => {
               <Link to={`${e.id}`}>
                 <div className="card border-primary mb-3">
                   <div className="card-body text-primary">
-                    <h5 className="card-title">{e.title}</h5>
+                    <h5 className="card-title">{e.title_ar}</h5>
                     <p className="card-text">{e.date}</p>
                   </div>
                 </div>

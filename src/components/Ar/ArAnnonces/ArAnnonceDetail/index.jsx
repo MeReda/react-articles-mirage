@@ -22,9 +22,9 @@ const ArAnnonceDetail = () => {
             <h1 className="text-light">{annonce.image}</h1>
           </div>
           <div className="container pt-3">
-            <h1 className="text-center">{annonce.title}</h1>
+            <h1 className="text-center">{annonce.title_ar}</h1>
             <p className="text-center">{annonce.date}</p>
-            <p className="mt-4">{annonce.body}</p>
+            <p className="mt-4">{annonce.body_ar}</p>
           </div>
         </>
       ) : (
