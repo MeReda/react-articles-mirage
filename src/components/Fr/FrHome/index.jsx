@@ -1,12 +1,19 @@
 import { useState, useEffect } from "react";
+import { getArticles } from "../../../api";
 
 const FrHome = () => {
   const [myData, setMyData] = useState([]);
 
   useEffect(() => {
-    fetch("/api/articles")
-      .then((res) => res.json())
-      .then((d) => setMyData(d));
+    async function ladData() {
+      try {
+        const data = await getArticles();
+        setMyData(data);
+      } catch (error) {
+        console.log(error);
+      }
+    }
+    ladData();
   }, []);
 
   return (

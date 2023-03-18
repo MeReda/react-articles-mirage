@@ -1,13 +1,16 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { getArticles } from "../../../api";
 
 const FrArticles = () => {
   const [articles, setArticles] = useState([]);
 
   useEffect(() => {
-    fetch("/api/articles")
-      .then((res) => res.json())
-      .then((data) => setArticles(data.articles));
+    async function ladData() {
+      const data = await getArticles();
+      setArticles(data);
+    }
+    ladData();
   }, []);
 
   return (
