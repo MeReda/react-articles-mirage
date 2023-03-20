@@ -1,17 +1,15 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 import { getArticles } from "../../../api";
 
-const FrArticles = () => {
-  const [articles, setArticles] = useState([]);
+export const loader = () => {
+  return getArticles();
+};
 
-  useEffect(() => {
-    async function ladData() {
-      const data = await getArticles();
-      setArticles(data);
-    }
-    ladData();
-  }, []);
+const FrArticles = () => {
+  const data = useLoaderData();
+
+  const articles = data;
 
   return (
     <>

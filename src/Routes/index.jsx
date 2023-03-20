@@ -7,7 +7,9 @@ import {
 } from "react-router";
 import { createBrowserRouter } from "react-router-dom";
 import FrHome from "../components/Fr/FrHome";
-import FrArticles from "../components/Fr/FrArticles";
+import FrArticles, {
+  loader as frArticlesLoader,
+} from "../components/Fr/FrArticles";
 import FrArticleDetail from "../components/Fr/FrArticles/FrArticleDetail";
 import FrLayout from "../components/Fr/FrLayout";
 import FrEvenements from "../components/Fr/FrEvenements";
@@ -33,7 +35,11 @@ const router = createBrowserRouter(
       <Route path="/" element={<Outlet />}>
         <Route path="fr" element={<FrLayout />}>
           <Route index element={<FrHome />} />
-          <Route path="articles" element={<FrArticles />} />
+          <Route
+            path="articles"
+            element={<FrArticles />}
+            loader={frArticlesLoader}
+          />
           <Route path="articles/:id" element={<FrArticleDetail />} />
           <Route path="evenements" element={<FrEvenements />} />
           <Route path="evenements/:id" element={<FrEvenementDetail />} />
