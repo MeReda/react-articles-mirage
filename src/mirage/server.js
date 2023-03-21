@@ -9,7 +9,7 @@ createServer({
 
   seeds(server) {
     server.create("article", {
-      id: 1,
+      id: "1",
       title: "Article 1",
       body: `MirageJS est une bibliothèque open-source puissante et polyvalente qui permet aux développeurs de construire, de tester et de partager facilement et rapidement des API fictives. Elle fournit une API simple et intuitive pour définir des itinéraires, traiter des requêtes et générer des données fictives, ce qui en fait un outil idéal pour les développeurs frontend qui souhaitent travailler indépendamment de l'équipe backend ou pour les développeurs qui veulent simuler différents scénarios dans leurs environnements de test. L'un des avantages significatifs de MirageJS est qu'il permet aux développeurs de simuler les réponses du serveur, de tester le code côté client et de prototyper de nouvelles fonctionnalités sans avoir besoin d'un véritable backend. Cela en fait un outil précieux pour les développeurs qui veulent créer ou itérer leurs applications rapidement, car ils peuvent utiliser MirageJS pour simuler différents scénarios de données sans avoir besoin de se connecter à un backend en direct. En plus de sa fonctionnalité de base, MirageJS propose également une gamme de plugins et d'addons qui étendent encore davantage ses capacités, y compris la prise en charge de GraphQL et de WebSockets. Cela signifie que les développeurs peuvent utiliser MirageJS pour construire des applications plus complexes et plus puissantes qui s'intègrent à une gamme de sources de données différentes. Dans l'ensemble, MirageJS est un outil essentiel pour le développement web moderne, offrant aux développeurs un moyen flexible et puissant de construire et de tester des API de manière rapide et efficace`,
       title_ar: "مقال 1",
@@ -18,7 +18,7 @@ createServer({
       date: "2023-02-01",
     });
     server.create("article", {
-      id: 2,
+      id: "2",
       title: "Article 2",
       body: `La bibliothèque MirageJS est open-source et polyvalente qui permet aux développeurs de construire, tester et partager rapidement des API fictives. Son API intuitive pour définir des itinéraires, traiter des requêtes et générer des données fictives en fait un outil précieux pour les développeurs frontend qui souhaitent travailler indépendamment de l'équipe backend ou simuler différents scénarios dans leurs environnements de test.Un avantage significatif de MirageJS est sa capacité à simuler les réponses du serveur, tester le code côté client et prototyper de nouvelles fonctionnalités sans avoir besoin d'un véritable backend. Cela en fait un outil précieux pour les développeurs qui souhaitent créer ou itérer rapidement leurs applications, car ils peuvent utiliser MirageJS pour simuler différents scénarios de données sans avoir besoin de se connecter à un backend en direct.En plus de sa fonctionnalité de base, MirageJS propose également une gamme de plugins et d'addons qui étendent encore davantage ses capacités, notamment la prise en charge de GraphQL et de WebSockets. Cela signifie que les développeurs peuvent utiliser MirageJS pour construire des applications plus complexes et plus puissantes qui s'intègrent à une gamme de sources de données différentes.Dans l'ensemble, MirageJS est un outil essentiel pour le développement web moderne, offrant aux développeurs un moyen flexible et puissant de construire et de tester des API de manière rapide et efficace.`,
       title_ar: "مقال 2",
@@ -27,7 +27,7 @@ createServer({
       date: "2023-02-02",
     });
     server.create("article", {
-      id: 3,
+      id: "3",
       title: "Article 3",
       body: `MirageJS est une bibliothèque open-source polyvalente qui permet aux développeurs de construire, de tester et de partager facilement et rapidement des API fictives. Sa syntaxe intuitive pour définir des itinéraires, traiter des requêtes et générer des données fictives en fait un outil précieux pour les développeurs frontend souhaitant travailler de manière autonome par rapport à l'équipe backend ou pour simuler différents scénarios dans leurs environnements de test.Un avantage significatif de MirageJS est sa capacité à simuler les réponses du serveur, à tester le code côté client et à prototyper de nouvelles fonctionnalités sans avoir besoin d'un véritable backend. Cela en fait un outil précieux pour les développeurs qui souhaitent créer ou itérer rapidement leurs applications, car ils peuvent utiliser MirageJS pour simuler différents scénarios de données sans avoir besoin de se connecter à un backend en direct.En plus de sa fonctionnalité de base, MirageJS propose également une gamme de plugins et d'addons qui étendent encore davantage ses capacités, y compris la prise en charge de GraphQL et de WebSockets. Cela signifie que les développeurs peuvent utiliser MirageJS pour construire des applications plus complexes et plus puissantes qui s'intègrent à une gamme de sources de données différentes. Dans l'ensemble, MirageJS est un outil essentiel pour le développement web moderne, offrant aux développeurs un moyen flexible et puissant de construire et de tester des API de manière rapide et efficace.`,
       title_ar: "مقال 3",
@@ -36,7 +36,7 @@ createServer({
       date: "2023-02-03",
     });
     server.create("article", {
-      id: 4,
+      id: "4",
       title: "Article 4",
       body: `MirageJS is a powerful and versatile open-source library that enables developers to build, test, and share mock APIs easily and quickly. It provides a simple and intuitive API for defining routes, handling requests, and generating fake data, making it an ideal tool for frontend developers who want to work independently from the backend team or for developers who want to simulate different scenarios in their testing environments.One of the significant advantages of MirageJS is that it enables developers to simulate server responses, test client-side code, and prototype new features without needing a real backend. This makes it a valuable tool for developers who want to create or iterate their applications rapidly, as they can use MirageJS to simulate different data scenarios without the need to connect to a live backend.In addition to its core functionality, MirageJS also offers a range of plugins and addons that extend its capabilities further, including support for GraphQL and WebSockets. This means that developers can use MirageJS to build more complex and powerful applications that integrate with a range of different data sources.Overall, MirageJS is an essential tool for modern web development, providing developers with a flexible and powerful way to build and test APIs in a fast and efficient manner.`,
       title_ar: "مقال 4",
@@ -45,7 +45,7 @@ createServer({
       date: "2023-02-04",
     });
     server.create("article", {
-      id: 5,
+      id: "5",
       title: "Article 5",
       body: `MirageJS is a powerful and versatile open-source library that enables developers to build, test, and share mock APIs easily and quickly. It provides a simple and intuitive API for defining routes, handling requests, and generating fake data, making it an ideal tool for frontend developers who want to work independently from the backend team or for developers who want to simulate different scenarios in their testing environments.One of the significant advantages of MirageJS is that it enables developers to simulate server responses, test client-side code, and prototype new features without needing a real backend. This makes it a valuable tool for developers who want to create or iterate their applications rapidly, as they can use MirageJS to simulate different data scenarios without the need to connect to a live backend.In addition to its core functionality, MirageJS also offers a range of plugins and addons that extend its capabilities further, including support for GraphQL and WebSockets. This means that developers can use MirageJS to build more complex and powerful applications that integrate with a range of different data sources.Overall, MirageJS is an essential tool for modern web development, providing developers with a flexible and powerful way to build and test APIs in a fast and efficient manner.`,
       title_ar: "مقال 5",
@@ -54,7 +54,7 @@ createServer({
       date: "2023-02-05",
     });
     server.create("article", {
-      id: 6,
+      id: "6",
       title: "Article 6",
       body: `MirageJS is a powerful and versatile open-source library that enables developers to build, test, and share mock APIs easily and quickly. It provides a simple and intuitive API for defining routes, handling requests, and generating fake data, making it an ideal tool for frontend developers who want to work independently from the backend team or for developers who want to simulate different scenarios in their testing environments.One of the significant advantages of MirageJS is that it enables developers to simulate server responses, test client-side code, and prototype new features without needing a real backend. This makes it a valuable tool for developers who want to create or iterate their applications rapidly, as they can use MirageJS to simulate different data scenarios without the need to connect to a live backend.In addition to its core functionality, MirageJS also offers a range of plugins and addons that extend its capabilities further, including support for GraphQL and WebSockets. This means that developers can use MirageJS to build more complex and powerful applications that integrate with a range of different data sources.Overall, MirageJS is an essential tool for modern web development, providing developers with a flexible and powerful way to build and test APIs in a fast and efficient manner.`,
       title_ar: "مقال 6",
@@ -64,7 +64,7 @@ createServer({
     });
 
     server.create("evenement", {
-      id: 1,
+      id: "1",
       title: "Spring Fashion Week",
       title_ar: "أسبوع الموضة الربيعي",
       date: "2023-04-15",
@@ -77,7 +77,7 @@ createServer({
       image: "Image 1",
     });
     server.create("evenement", {
-      id: 2,
+      id: "2",
       title: "Music Festival",
       title_ar: "مهرجان الموسيقى",
       date: "2023-05-20",
@@ -89,7 +89,7 @@ createServer({
     });
 
     server.create("evenement", {
-      id: 3,
+      id: "3",
       title: "Tech Conference",
       title_ar: "مؤتمر التقنية",
       date: "2023-06-10",
@@ -102,7 +102,7 @@ createServer({
     });
 
     server.create("evenement", {
-      id: 4,
+      id: "4",
       title: "Anime Expo",
       title_ar: "معرض الأنمي",
       date: "2023-07-05",
@@ -116,7 +116,7 @@ createServer({
     });
 
     server.create("evenement", {
-      id: 5,
+      id: "5",
       title: "Food and Juse Festival",
       title_ar: "مهرجان الطعام والعصائر",
       date: "2023-08-15",
@@ -129,7 +129,7 @@ createServer({
     });
 
     server.create("evenement", {
-      id: 6,
+      id: "6",
       title: "Carnival",
       title_ar: "كرنفال",
       date: "2023-09-23",
@@ -141,7 +141,7 @@ createServer({
       image: "Image 6",
     });
     server.create("annonce", {
-      id: 1,
+      id: "1",
       title: "Annonce 1",
       title_ar: "إعلان 1",
       body: " MirageJS est une bibliothèque open-source puissante et polyvalente qui permet aux développeurs de construire, de tester et de partager facilement et rapidement des API fictives.",
@@ -151,7 +151,7 @@ createServer({
       date: "2023-02-01",
     });
     server.create("annonce", {
-      id: 2,
+      id: "2",
       title: "Annonce 2",
       title_ar: "إعلان 2",
       body: "La bibliothèque MirageJS est open-source et polyvalente qui permet aux développeurs de construire, tester et partager rapidement des API fictives.",
@@ -161,7 +161,7 @@ createServer({
       date: "2023-02-02",
     });
     server.create("annonce", {
-      id: 3,
+      id: "3",
       title: "Annonce 3",
       title_ar: "إعلان 3",
       body: "La bibliothèque MirageJS est open-source et polyvalente qui permet aux développeurs de construire, tester et partager rapidement des API fictives.",
@@ -177,7 +177,6 @@ createServer({
     this.logging = false;
 
     this.get("/articles", (schema, request) => {
-      return new Response(404, {}, { error: "Error fetching data" });
       return schema.articles.all();
     });
 

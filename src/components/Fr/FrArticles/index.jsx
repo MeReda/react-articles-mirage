@@ -1,13 +1,16 @@
-import { useEffect, useState } from "react";
+import axios from "axios";
+import { useState } from "react";
 import { Link, useLoaderData } from "react-router-dom";
-import { getArticles } from "../../../api";
 
-export const loader = () => {
-  return getArticles();
+const API_BASE_URL = "/api";
+
+export const loader = async ({ params }) => {
+  const response = await axios.get(`${API_BASE_URL}/articles`);
+  return response.data.articles;
 };
 
 const FrArticles = () => {
-  const data = useLoaderData();
+  const [data, setData] = useState(useLoaderData());
 
   const articles = data;
 

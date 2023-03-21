@@ -1,12 +1,20 @@
+import axios from "axios";
+
+const API_BASE_URL = "/api"; // set your base URL here
+
+const api = axios.create({
+  baseURL: API_BASE_URL,
+});
+
 export async function getArticles() {
-  const res = await fetch("/api/articles");
-  if (!res.ok) {
+  try {
+    const response = await api.get("/articles");
+    return response.data.articles;
+  } catch (error) {
     throw {
-      message: "Failed to fetch vans",
-      statusText: res.statusText,
-      status: res.status,
+      message: "Failed to fetch articles",
+      statusText: error.response.statusText,
+      status: error.response.status,
     };
   }
-  const data = await res.json();
-  return data.articles;
 }
